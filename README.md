@@ -28,7 +28,7 @@ $ cd wework_server && npm install
 <pre><code>npm install --save wechat-crypto</code></pre>
 <strong>Director</strong>
 .</br>
-├── bin --express的配置，可修改对应的端口以及启动信息</br>
+├── --express的配置，可修改对应的端口以及启动信息</br>
 ├── node_modules  --nodejs模块</br>
 ├── public        --静态资源文件</br>
 ├── routes        --路由</br>
