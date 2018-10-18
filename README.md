@@ -7,9 +7,10 @@ weworkapi_nodejs 是为了简化开发者对企业微信API回调接口的使用
 另外，作者会不定期更新本库，但不保证与官方API接口文档同步，因此一切以官方文档为准。
 
 更多来自个人开发者的其它语言的库推荐：
-python: https://github.com/sbzhu/weworkapi_python
-ruby: https://github.com/mycolorway/wework
-php: https://github.com/sbzhu/weworkapi_php
+
+- python: https://github.com/sbzhu/weworkapi_python
+- ruby: https://github.com/mycolorway/wework
+- php: https://github.com/sbzhu/weworkapi_php
 
 # 搭建环境
 
