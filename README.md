@@ -26,7 +26,17 @@ $ cd wework_server && npm install
 </code></pre>
 安装<strong>wechat-crypto</strong>模块，这是用于和微信服务器进行加解密的Nodejs模块
 <pre><code>npm install --save wechat-crypto</code></pre>
-../router/wechat.js关键部分代码
+<strong>Director</strong>
+.</br>
+├── bin --express的配置，可修改对应的端口以及启动信息</br>
+├── node_modules  --nodejs模块</br>
+├── public        --静态资源文件</br>
+├── routes        --路由</br>
+├── views         --视图</br>
+├── app.js        --应用核心配置文件</br>
+└── config.js     --项目依赖配置及开发者信息</br>
+
+以下是该加解密关键部分代码../router/wechat.js
 <pre><code>
 router.use('/', function (req, res, next) {
     var method = req.method;
