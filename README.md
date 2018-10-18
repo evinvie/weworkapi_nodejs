@@ -78,6 +78,7 @@ npm start
 ├── routes        -- 路由
 ├── views         -- 视图
 ├── app.js        -- 应用核心配置文件
+├── package.json  -- 相关nodejs模板以及作者信息
 └── config.js     -- 项目依赖配置及开发者信息
 ```
 
