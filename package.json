@@ -1,7 +1,7 @@
 {
-  "name": "v_zexyao@tencent.com",
+  "author": "v_zexyao@tencent.com",
   "version": "0.1.1",
-  "url" : "https://github.com/evinvie/weworkapi_nodejs.gitignore",
+  "url" : "https://github.com/evinvie/weworkapi_nodejs.git",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
