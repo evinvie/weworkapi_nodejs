@@ -1,0 +1,36 @@
+{
+  "name": "wework_nodejs",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "~1.4.3",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "ejs": "^2.6.1",
+    "express": "~4.16.0",
+    "forever": "^0.15.3",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.0",
+    "request": "^2.88.0",
+    "wechat-crypto": "0.0.2",
+    "xml2js": "^0.4.19"
+  },
+  "description": "wework_callback",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evinvie/weworkapi_nodejs.git"
+  },
+  "author": "v_zexyao@tencent.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evinvie/weworkapi_nodejs/issues"
+  },
+  "homepage": "https://github.com/evinvie/weworkapi_nodejs#readme"
+}
