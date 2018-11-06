@@ -18,6 +18,7 @@ router.use('/', function (req, res, next) {
   var sVerifyNonce = req.query.nonce;
   var sVerifyEchoStr = decodeURIComponent(req.query.echostr);
   var sEchoStr;
+  //服务商使用解密库时候，应当注意，get请求传入的是corpid，post请求时候需传入suiteid，需要将此函数放置到对应的post请求下面执行
   var cryptor = new WXBizMsgCrypt(token, EncodingAESKey, corpId);
   /* GET home page. */
   if (method == 'GET') {
