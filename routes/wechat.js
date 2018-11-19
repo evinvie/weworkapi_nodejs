@@ -27,7 +27,7 @@ router.use('/', function (req, res, next) {
       sEchoStr = cryptor.decrypt(sVerifyEchoStr).message;
       res.send(sEchoStr);
     } else {
-      res.send("invaild MsgSig")
+      res.send("-40001_invaild MsgSig")
     }
   }
   /* POST home page. */
@@ -40,7 +40,7 @@ router.use('/', function (req, res, next) {
         }
         var xml = buff.toString('utf-8');
         if (!xml) {
-          var emptyErr = new Error('body is empty');
+          var emptyErr = new Error('-40002_body is empty');
           emptyErr.name = 'weChat';
 
         }
@@ -48,26 +48,26 @@ router.use('/', function (req, res, next) {
           trim: true
         }, function (err, result) {
           if (err) {
-            var parseErr = new Error('parse xml error');
+            var parseErr = new Error('-40008_parse xml error');
             parseErr.name = 'weChat';
           }
           var xml = formatMessage(result.xml);
           var encryptMessage = xml.Encrypt;
           if (sVerifyMsgSig != cryptor.getSignature(sVerifyTimeStamp, sVerifyNonce, encryptMessage)) {
-            console.log("fail");
+            //console.log("fail");
             return;
           }
           var decrypted = cryptor.decrypt(encryptMessage);
           var messageWrapXml = decrypted.message;
           if (messageWrapXml === '') {
-            res.status(401).end('Invalid corpId');
+            res.status(401).end('-40005_Invalid corpId');
             return;
           }
           xml2js.parseString(messageWrapXml, {
             trim: true
           }, function (err, result) {
             if (err) {
-              var parseErr = new Error('BadMessage:' + err.name);
+              var parseErr = new Error('-40008_BadMessage:' + err.name);
               parseErr.name = 'weChat';
             }
             var message = formatMessage(result.xml);
