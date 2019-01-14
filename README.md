@@ -11,6 +11,9 @@ weworkapi_nodejs 是为了简化开发者对企业微信API回调接口的使用
 - python: https://github.com/sbzhu/weworkapi_python
 - ruby: https://github.com/mycolorway/wework
 - php: https://github.com/sbzhu/weworkapi_php
+- golang : https://github.com/doubliekill/EnterpriseWechatSDK 1006401052yh@gmail.com
+
+Requirement
 
 # 搭建环境
 
