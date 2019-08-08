@@ -87,4 +87,4 @@ npm start
 
 # Contact us
 
-v_zexyao@tencent.com
+zexinyao@tencent.com
